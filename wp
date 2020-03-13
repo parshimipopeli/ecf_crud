@@ -1,0 +1,14 @@
+
+un hoock c est comme une balise de positionnement pour effectuer une action a cet endroit du code
+
+
+
+
+
+pour faire un theme enfant,il faut prendre un theme de wordpreess et de l utiliser comme exemple?
+il y ass un generateur de theme enfant wur wp marmite !!!
+
+
+
+pour faire un plugin il faut aller dans le code de wordpress ,dans le dosssier wp-content plugin faire un nouveau dossier avec un fichier qui porte le meme non,
+puis faire notre script de notre pluggin

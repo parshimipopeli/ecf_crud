@@ -1,0 +1,26 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+DROP DATABASE  IF EXISTS `ecf_afpa`;
+CREATE DATABASE IF NOT EXISTS `ecf_afpa`;
+USE `ecf_afpa`;
+
+DROP TABLE IF EXISTS `inscris`;
+CREATE TABLE IF NOT EXISTS `inscris` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `date_ajout` datetime DEFAULT NOW(),
+  `derniers_modif` datetime DEFAULT NOW(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+commit;
